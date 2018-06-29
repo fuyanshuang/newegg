@@ -7,6 +7,9 @@ img {vertical-align: middle;border: 0; }
 body {font-size: 12px; }
 input {outline: none; }
 input[type="button"], input[type="submit"], input[type="file"], input[type="text"], input[type="radio"], button {cursor: pointer; }
+a:hover{
+  text-decoration: underline;
+}
 .cl:after {
   display: block;
   clear: both;
@@ -58,9 +61,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
   display: block;
   font-size: 12px;
   color: #666;
-}
-.header_top_box a:hover{
-  text-decoration: underline;
 }
 .header_top_right .herder_icon_i{
   float: left;
@@ -145,9 +145,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
   padding: 0 6px;
   border-right: 1px solid #767676;
 }
-.search_ul li a:hover{
-  text-decoration: underline;
-}
 #search_ul_last{
   border-right: none;
 }
@@ -198,6 +195,9 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
 }
 .header_nav_center li:hover{
   background: #2936dc;
+}
+.header_nav_center li:hover a{
+  text-decoration: none;
 }
 .header_nav_center li a{
   color: #fff;
@@ -263,6 +263,7 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
 }
 .banner{
   width: 1200px;
+  height: 488px;
   margin: 0 auto;
 }
 .banner_left{
@@ -319,9 +320,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
   line-height: 22px;
   margin-right: 5px;
 }
-.banner_left_li h4 a:hover{
-  text-decoration: underline;
-}
 .banner_left_odiv{
   width: 140px;
   height: 18px;
@@ -337,9 +335,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
 .banner_left_odiv a:nth-child(3){
   color: #f60;
 }
-.banner_left_odiv a:hover{
-  text-decoration: underline;
-}
 #banner_left_oli a{
   display: inline-block;
   font-size: 12px;
@@ -347,9 +342,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
   line-height: 27px;
   padding-right: 5px;
   color: #333;
-}
-#banner_left_oli a:hover{
-  text-decoration: underline;
 }
 
   /*导航隐藏div开始*/
@@ -423,12 +415,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
 .banner_left_pd dd a:last-child{
   border-right: none;
 }
-.banner_left_pd dd a:hover{
-  text-decoration: underline;
-}/* 
-.banner_left_li:hover{
-  transform: translate3d(0, 0, 0);
-} */
 
 /*导航隐藏div结束*/
 
@@ -492,6 +478,21 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
   font: 16px/24px "微软雅黑";
   padding-left: 12px;
   color: #bf1313;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.b_c_h2a{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 19px;
+  padding: 0px 12px 0px 10px;
+  font: 12px/16px "微软雅黑";
+  color: #666;
+  font-weight: bold;
+  background: url(../images/arrow130427.png) no-repeat 88px 4px;
 }
 .b_c_bdiv{
   position: relative;
@@ -529,9 +530,6 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
   text-align: left;
   display: block;
 }
-.b_c_bap:hover{
-  text-decoration: underline;
-}
 .b_c_bli p{
   color: #f60;
 }
@@ -561,4 +559,179 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="text
 /* 
   轮播中间板块结束
  */
+
+.banner_right{
+  float: right;
+  width: 230px;
+}
+.banner_right_top{
+  width: 226px;
+  height: 241px;
+  border: 2px solid #f1d4b3;
+  position: relative;
+  margin-top: 10px;
+}
+.b_r_tspan{
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  height: 10px;
+}
+.b_r_tspan span{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ebe7e5;
+  z-index: 50;
+  display: block;
+  float: left;
+  margin-right: 6px;
+}
+.b_r_tdiv{
+  width: 226px;
+  height: 241px;
+  overflow: hidden;
+  position: relative;
+}
+.b_r_tul{
+  width: 10000px;
+  height: 241px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b_r_tli{
+  float: left;
+}
+.b_r_tspan .brtspans{
+  background-color: #f60;
+}
+
+.banner_right_bottom{
+  display: block;
+  width: 230px;
+  height: 218px;
+  margin-top: 10px;
+}
 /*轮播板块结束*/
+/* 热卖区开始 */
+.w100{
+  width: 100%;
+}
+.hotsale{
+  width: 1200px;
+  margin: 0px auto;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #484848;
+}
+.hotsale_left{
+  float: left;
+  width: 960px;
+  height: 287px;
+  position: relative;
+}
+.hotsale_left h2{
+  font-size: 20px;
+  line-height: 36px;
+  border-bottom: 3px solid #f60;
+  padding-left: 10px; 
+  padding-top: 7px;
+  color: #f60;
+  height: 38px;
+}
+.hotsale_title{
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  width: 880px;
+  height: 18px;
+}
+.hotsale_title p{
+  height: 18px;
+  color: #666;
+  padding-left: 20px;
+  font: 12px/18px "微软雅黑";
+  float: left;
+  background: url(../images/hot_flash.png) 3px 2px no-repeat;
+}
+.hotsale_title p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.hotsale_title span{
+  display: block;
+  height: 18px;
+  color: #666;
+  font: 12px/18px "微软雅黑";
+  float: right;
+}
+.hotsale_title span:hover{
+  cursor: default;
+}
+.hotsale_left_div{
+  border: 1px solid #dadada;
+  padding-bottom: 3px;
+  height: 234px;
+  width: 958px;
+  position: relative;
+  overflow: hidden;
+}
+.hotsale_left_ul{
+  width: 20000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hotsale_left_ul li{
+  width: 196px;
+  float: left;
+  padding: 15px 19px 16px 24px;
+}
+.hotsale_left_img img{
+  width: 180px;
+  height: 135px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.hotsale_left_ap{
+  display: block;
+  height: 36px;
+  overflow: hidden;
+  margin: 4px 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.hotsale_left_p{
+  margin-left: 18px;
+  padding-top: 3px;
+  width: 85px;
+  font: 14px/14px "微软雅黑";
+  color: #f60;
+  font-weight: bold;
+  position: relative;
+}
+.hotsale_left_p a{
+  display: block;
+  height: 23px;
+  width: 24px;
+  font-weight: normal;
+  border: 1px solid #ff971c;
+  background: #f60;
+  padding: 0 10px;
+  font: 12px/24px "微软雅黑";
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 85px;
+  top: 0;
+}
+.hotsale_left_p a:hover{
+  text-decoration: none;
+  background-color: #ff971c;
+}
+
+/* 热卖区结束 */
