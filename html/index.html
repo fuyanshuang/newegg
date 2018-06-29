@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src = "../js/jquery-1.11.3.js"></script>
+		<script src="../js/index.js"></script>
+		<link rel="stylesheet" href="../css/index.css">
+		
+	</head>
+	<body>
+	<!-- 头部开始 -->
+		<div class="header">
+		<!-- 顶部登录注册开始 -->
+			<div class="header_top">
+				<div class="header_top_box">
+					<div class="header_top_left">
+						<a class="header_top_icon" href="#">掌上新蛋</a>
+						<a class="header_top_icon" href="#">企业团购</a>
+					</div>
+					<ul class="header_top_right">
+						<li><a href="#">我的订单</a></li>
+						<li class="herder_icon">
+							<a href="#">我的新蛋</a>
+							<i class="herder_icon_i"></i>
+							<div class="herder_icon_abs">
+								请登录后查看
+							</div>
+						</li>
+						<li><a href="#">帮助中心</a></li>
+						<li class="herder_icon">
+							<a href="#">客服服务</a>
+							<i class="herder_icon_i"></i>
+							<div class="herder_icon_abs herder_icon_second">
+								<strong>400-000-2456</strong>
+								<strong>021-6666</strong>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		<!-- 顶部登录注册结束 -->
+
+		<!-- 顶部搜索开始 -->
+			<div class="header_logo">
+				<div class="header_logo_left">
+					<a href="#">
+						<img src="../images/logocn_1213.png" alt="">
+					</a>
+				</div>
+				<div class="header_logo_right">
+					<div class="header_input">
+						<input type="text" placeholder="请输入您要搜索的关键字" id="header_text">
+						<input type="submit" value="搜索" id="header_submit">
+					</div>
+					<ul class="search_ul">
+						<li><a href="#">Bose</a></li>
+						<li><a href="#">iPhoneX</a></li>
+						<li><a href="#">mate10</a></li>
+						<li><a href="#">Thinkpad</a></li>
+						<li id="search_ul_last"><a href="#">索尼电视机</a></li>
+					</ul>
+				</div>
+			</div>
+		<!-- 顶部搜索结束 -->
+
+		<!-- 顶部导航栏开始 -->
+			<div class="header_nav">
+				<div class="header_nav_box">
+					<a class="header_nav_left" href="#">
+						<p>全部商品分类</p>
+						<i></i>
+					</a>
+					<ul class="header_nav_center">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">限时抢购</a></li>
+						<li><a href="#">团团赚</a></li>
+						<li><a href="#">爱车配</a></li>
+						<li><a href="#">二手宝库</a></li>
+					</ul>
+					<ul class="header_nav_right">
+						<li>
+							<a href="#" id="header_nav_a">购物车</a>
+							<div class="header_nav_abs abs_left">哈哈哈</div>
+						</li>
+						<li>
+							<a href="#">收藏提醒</a>
+							<div class="header_nav_abs abs_right">啊啊啊啊</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<!-- 顶部导航栏结束 -->
+		</div>
+	<!-- 头部结束 -->
+	<!-- 轮播板块开始 -->
+		<div class="banner_box">
+			<div class="banner">
+				<ul class="banner_left">
+					<li class="banner_left_li">
+						<div class="banner_left_icon"></div>
+						<h4><a href="#">海外直购</a></h4>
+						<div class="banner_left_odiv">
+							<a href="#" class="banner_left_a">润肤</a>
+							<a href="#" class="banner_left_a">面膜</a>
+							<a href="#" class="banner_left_a">奶粉</a>
+						</div>
+
+
+
+						<div class="banner_left_pd banner_left_pd1">
+							<dl>
+								<dt>个户美装</dt>
+								<dd>
+									<a href="#">面膜</a>
+									<a href="#">润肤</a>
+									<a href="#">面部彩妆</a>
+									<a href="#">洗发水</a>
+									<a href="#">个护清洁</a>
+								</dd>
+							</dl>	
+							<dl>
+								<dt>母婴商品</dt>
+								<dd>
+									<a href="#">婴儿喂养</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>营养保健</dt>
+								<dd>
+									<a href="#">营养类</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="banner_left_pdborder"></div>
+						
+						
+					</li>
+					<li class="banner_left_li">
+						
+
+						<div class="banner_left_pd banner_left_pd2">
+							<dl>
+								<dt>个户美装</dt>
+								<dd>
+									<a href="#">面膜</a>
+									<a href="#">润肤</a>
+									<a href="#">面部彩妆</a>
+									<a href="#">洗发水</a>
+									<a href="#">个护清洁</a>
+								</dd>
+							</dl>	
+							<dl>
+								<dt>母婴商品</dt>
+								<dd>
+									<a href="#">婴儿喂养</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>营养保健</dt>
+								<dd>
+									<a href="#">营养类</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="banner_left_pdborder"></div>
+	
+
+						<div class="banner_left_icon icon2"></div>
+						<h4>
+							<a href="#">手机</a>
+							<a href="#">摄影</a>
+							<a href="#">苹果</a>
+						</h4>
+						<div class="banner_left_odiv">
+							<a href="#" class="banner_left_a">智能手机</a>
+							<a href="#" class="banner_left_a">微单</a>
+							<a href="#" class="banner_left_a">数码包</a>
+						</div>
+					</li>
+					<li class="banner_left_li">
+
+						<div class="banner_left_pd banner_left_pd3">
+							<dl>
+								<dt>个户美装</dt>
+								<dd>
+									<a href="#">面膜</a>
+									<a href="#">润肤</a>
+									<a href="#">面部彩妆</a>
+									<a href="#">洗发水</a>
+									<a href="#">个护清洁</a>
+								</dd>
+							</dl>	
+							<dl>
+								<dt>母婴商品</dt>
+								<dd>
+									<a href="#">婴儿喂养</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>营养保健</dt>
+								<dd>
+									<a href="#">营养类</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="banner_left_pdborder"></div>
+
+
+
+						<div class="banner_left_icon icon3"></div>
+						<h4>
+							<a href="#">电脑</a>
+							<a href="#">外设</a>
+							<a href="#">办公</a>
+						</h4>
+						<div class="banner_left_odiv">
+							<a href="#" class="banner_left_a">笔记本</a>
+							<a href="#" class="banner_left_a">智能硬件</a>
+							<a href="#" class="banner_left_a">硬盘</a>
+						</div>
+					</li>
+					<li class="banner_left_li">
+
+
+						<div class="banner_left_pd banner_left_pd4">
+							<dl>
+								<dt>个户美装</dt>
+								<dd>
+									<a href="#">面膜</a>
+									<a href="#">润肤</a>
+									<a href="#">面部彩妆</a>
+									<a href="#">洗发水</a>
+									<a href="#">个护清洁</a>
+								</dd>
+							</dl>	
+							<dl>
+								<dt>母婴商品</dt>
+								<dd>
+									<a href="#">婴儿喂养</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>营养保健</dt>
+								<dd>
+									<a href="#">营养类</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="banner_left_pdborder"></div> 
+
+
+						<div class="banner_left_icon icon4"></div>
+						<h4><a href="#">家用电器</a></h4>
+						<div class="banner_left_odiv">
+							<a href="#" class="banner_left_a">电饭煲</a>
+						</div>
+					</li>
+					
+					<!-- 第五个 -->
+					<li class="banner_left_li banner_left_lastli">
+						<div class="banner_left_pd banner_left_pd5">
+							<dl>
+								<dt>个户美装</dt>
+								<dd>
+									<a href="#">面膜</a>
+									<a href="#">润肤</a>
+									<a href="#">面部彩妆</a>
+									<a href="#">洗发水</a>
+									<a href="#">个护清洁</a>
+								</dd>
+							</dl>	
+							<dl>
+								<dt>母婴商品</dt>
+								<dd>
+									<a href="#">婴儿喂养</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>营养保健</dt>
+								<dd>
+									<a href="#">营养类</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="banner_left_pdborder pdborder5"></div>
+
+
+						<div class="banner_left_icon icon5"></div>
+						<h4><a href="#">生活百货</a></h4>
+						<ul class="lastli_ul">
+							<li id="banner_left_oli">
+								<a href="#" class="banner_left_a">汽车用品</a>
+								<a href="#" class="banner_left_a">个护清洁</a>
+							</li>
+							<li id="banner_left_oli">
+								<a href="#" class="banner_left_a">家居</a>
+								<a href="#" class="banner_left_a">厨用</a>
+								<a href="#" class="banner_left_a">钟表</a>
+								<a href="#" class="banner_left_a">礼品</a>
+							</li>
+							<li id="banner_left_oli">
+								<a href="#" class="banner_left_a">服饰</a>
+								<a href="#" class="banner_left_a">女装</a>
+								<a href="#" class="banner_left_a">内衣</a>
+								<a href="#" class="banner_left_a">珠宝</a>
+							</li>
+							<li id="banner_left_oli">
+								<a href="#" class="banner_left_a">母婴</a>
+								<a href="#" class="banner_left_a">玩具</a>
+								<a href="#" class="banner_left_a">食品</a>
+								<a href="#" class="banner_left_a">酒饮</a>
+							</li>
+							<li id="banner_left_oli">
+								<a href="#" class="banner_left_a">鞋靴</a>
+								<a href="#" class="banner_left_a">箱包</a>
+								<a href="#" class="banner_left_a">运动</a>
+								<a href="#" class="banner_left_a">户外</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="banner_center">
+					<div class="banner_center_top">
+						<div class="banner_sowing_o">
+							<span>1</span>
+							<span>2</span>
+							<span>3</span>
+							<span>4</span>
+						</div>
+						<a href="#" class="banner_sowing_a">
+							<img src="../images/771x245_1.jpg" alt="">
+						</a>
+						<a href="#" class="banner_sowing_a">
+							<img src="../images/771x245_2.jpg" alt="">
+						</a>
+						<a href="#" class="banner_sowing_a">
+							<img src="../images/771x245_3.jpg" alt="">
+						</a>
+						<a href="#" class="banner_sowing_a">
+							<img src="../images/771x245_4.jpg" alt="">
+						</a>
+					</div>
+					<div class="banner_center_bottom">
+						<h2>限时抢购</h2>
+						<div class="b_c_bdiv">
+							<div class="b_c_bmover">
+								<ul class="b_c_bul">
+									<li class="b_c_bli">
+										<p class="b_c_bimg">
+											<a href="#">
+												<img src="../images/b_c_b1.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b2.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b3.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b4.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b5.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b6.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b7.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b8.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bimg">
+											<a href="#">
+												<img src="../images/b_c_b1.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b2.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b3.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+									<li class="b_c_bli">
+										<p class="b_c_bp">
+											<a href="#">
+												<img src="../images/b_c_b4.jpg" alt="">
+											</a>
+										</p>
+										<a href="#" class="b_c_bap">蓝牙耳机</a>
+										<p>￥499.00</p>
+									</li>
+								</ul>
+							</div>
+							<s href="#" class="b_c_bsleft"></s>
+							<s href="#" class="b_c_bsright" ></s>
+						</div>
+					</div>
+				</div>
+				<div class="banner_right">
+					<ul class="banner_right_top">
+						
+					</ul>
+					<a href="#" class="banner_right_bottom">
+						<img src="" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	<!-- 轮播板块结束 -->
+
+		
+		
+	</body>
+</html>
