@@ -620,6 +620,7 @@ a:hover{
 }
 .hotsale{
   width: 1200px;
+  overflow: hidden;
   margin: 0px auto;
   font-size: 12px;
   line-height: 1.5;
@@ -734,4 +735,227 @@ a:hover{
   background-color: #ff971c;
 }
 
+.hotsale_right{
+  float: right;
+  width: 230px;
+}
+.hotsale_right_top{
+  padding: 10px 0;
+  width: 99%;
+  border: 1px solid #d9d9d9;
+  height: 100px;
+  background: #f6f6f6;
+  margin-top: 10px;
+}
+.hotsale_right_top dt{
+  color: #666;
+  font-size: 14px;
+  padding: 0 10px 5px 10px;
+  border-bottom: 1px dashed #d9d9d9;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+.hotsale_right_top dt a{
+  display: block;
+  font: 12px/12px "微软雅黑";
+  position: absolute;
+  right: 15px;
+  top: 4px;
+  color: #666;
+}
+.hotsale_right_top dd a{
+  display: block;
+  padding: 0 10px;
+  color: #666;
+  font: 12px/14px "微软雅黑";
+  margin-bottom: 6px;
+}
+
+.hotsale_right_bottom{
+  width: 230px;
+  height: 123px;
+  position: relative;
+  margin-top: 10px;
+}
+.hotsale_right_bottom a{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  width: 230px;
+  height: 123px;
+}
 /* 热卖区结束 */
+
+/* 好评区开始 */
+.highopin{
+  width: 1200px;
+  height: 325px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.high_top{
+  width: 1200px;
+  border-bottom: 3px solid #f60;
+  height: 45px;
+  overflow: hidden;
+}
+.high_top p{
+  float: left;
+  padding: 7px 0 0 10px;
+  color: #f60;
+  font: 20px/36px "微软雅黑";
+  height: 38px;
+}
+.high_top span{
+  display: block;
+  float: right;
+  font: 12px/56px "微软雅黑";
+  color: #666;
+}
+
+.high_bottom{
+  width: 1199px;
+  height: 274px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+}
+.high_bottom_ul{
+  width: 2000px;
+}
+.high_bottom_li{
+  float: left;
+  width: 175px;
+  height: 275px;
+}
+.high_bottom_box{
+  width: 675px;
+  height: 240px;
+  padding-top: 35px;
+  border-left: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+
+.high_bottom_a{
+  display: block;
+  float: left;
+  margin: 0 30px;
+  width: 250px;
+  height: 239px;
+}
+.high_bottom_box a img{
+  width: 250px;
+  height: 185px;
+}
+.high_comment_title{
+  width: 360px;
+  height: 19px;
+  font-size: 14px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.high_comment_title strong{
+  color: #f60;
+  line-height: 19px;
+}
+.high_comment_title a{
+  color: #333;
+  display: inline-block;
+  width: 270px;
+}
+.high_comment p{
+  height: 123px;
+  font: 12px/20px "微软雅黑";
+  margin-bottom: 10px;
+  color: #676767;
+}
+/* 好评区结束 */
+
+/* 选项卡板块开始 */
+.tabs{
+  width: 1200px;
+  height: 290px;
+  margin: 0 auto;
+}
+.tabs_left{
+  width: 958px;
+  height: 267px;
+  border: 1px solid #d9d9d9;
+  float: left;
+  margin-bottom: 11px;
+}
+.tabs_topul{
+  height: 30px;
+  font: 12px/30px "微软雅黑";
+  color: #484848;
+}
+.tabs_topul li{
+  float: left;
+  width: 239px;
+  height: 29px;
+  border-right: 1px solid #d9d9d9;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+.tabs_topul li:last-child{
+  width: 238px;
+  border-right: none;
+}
+.tabs_bottomul{
+  width: 938px;
+  height: 208px;
+  padding: 30px 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+.tabs_bottomli{
+  width: 950px;
+  height: 193px;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  display: none;
+}
+.tabs_bottomli li{
+  float: left;
+  padding: 0 18px;
+}
+.tabs_a_img{
+  display: block;
+  width: 150px;
+  height: 108px;
+  text-align: center;
+}
+.tabs_a_text{
+  display: block;
+  margin-bottom: 14px;
+  height: 36px;
+  margin: 4px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #484848;
+}
+.tabs_span{
+  width: 150px;
+  font-size: 14px;
+  color: #f60;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.tabs_topul .tabs_active{
+  background-color: #fff;
+  color: #f60;
+  border-bottom: none;
+}
+.tabs_right{
+  width: 238px;
+  height: 268px;
+  float: left;
+}
+/* 选项卡板块结束 */

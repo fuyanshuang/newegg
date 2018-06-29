@@ -18,6 +18,7 @@ $(function(){
 		$(this).find(".banner_left_li, .lastli_ul").css("backgroundColor", "#fff");
 	})
 
+	
 
 	/*  轮播图   */
 	function banner_c_top(){
@@ -191,4 +192,69 @@ $(function(){
 		})
 	}
 	hotsale_roll();
+
+	function hotsale_right_roll(){
+		var aImages = $(".hotsale_right_bottom").find("a");
+
+		function showImages(index){
+			for(var i = 0; i < aImages.length; i++){
+				aImages[i].index = i;
+				aImages[i].style.opacity = "0";
+				aImages[i].style.zIndex = 50 - i;
+			}
+			aImages[index].style.opacity = "1";
+		}
+		showImages(0);
+
+		var count = 1;
+		function imageMove(){
+			if(count % 3 == 0){
+				count = 0;
+			}
+			showImages(count);
+			count++;
+		}
+
+		var imageInitailMove = setInterval(imageMove(), 3000);
+
+		$(".hotsale_right_bottom").find("a").hover(function(){
+			clearInterval(imageInitailMove);
+		},function(){
+			imageInitailMove = setInterval(function(){
+					imageMove();
+				}, 3000);
+		})
+	}
+	hotsale_right_roll();
+
+	$(".high_bottom_li").mouseover(function(){
+		$(this).stop().animate({
+			"width": "675px"
+		}).siblings().stop().animate({
+			"width": "175px"
+		})
+	})
+
+	/*选项卡板块开始*/
+	function tabs(){
+		var aBtns = $(".tabs_topul").find("li");
+		var aDivs = $(".tabs_bottomul").find("div");
+		
+		for(var i = 0; i < aBtns.length; i++){
+			aBtns[i].index = i;
+			aBtns[i].onmouseover = function(){
+				for(var j = 0; j < aBtns.length; j++){
+					aBtns[j].className = "";
+					aDivs[j].style.display = "none";
+				}
+
+				this.className = "tabs_active";
+				aDivs[this.index].style.display = "block";
+			}
+		}
+
+	}	
+	tabs();
+
+	/*选项卡板块结束*/
 })
